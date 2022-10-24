@@ -38,6 +38,9 @@ class LoginFragment : Fragment() {
         binding.notUserButton.setOnClickListener {
             findNavController().navigate(R.id.action_LoginFragment_to_RegisterFragment)
         }
+        binding.lostPwButton.setOnClickListener {
+            findNavController().navigate(R.id.action_LoginFragment_to_FirstLostPwFragment)
+        }
     }
 
     override fun onDestroyView() {
