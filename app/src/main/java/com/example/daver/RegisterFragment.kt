@@ -28,10 +28,10 @@ class RegisterFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.registerButton.setOnClickListener {
-            findNavController().navigate(R.id.action_MainFragment_to_LoginFragment)
+            findNavController().navigate(R.id.action_RegisterFragment_to_LoginFragment)
         }
         binding.gotoLoginButton.setOnClickListener {
-            findNavController().navigate(R.id.action_MainFragment_to_LoginFragment)
+            findNavController().navigate(R.id.action_RegisterFragment_to_LoginFragment)
         }
     }
 

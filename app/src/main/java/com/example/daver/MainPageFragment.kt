@@ -32,7 +32,7 @@ class MainPageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonSecond.setOnClickListener {
+        binding.root.setOnClickListener {
             findNavController().navigate(R.id.action_MainFragment_to_LoginFragment)
         }
     }

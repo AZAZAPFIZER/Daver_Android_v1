@@ -12,26 +12,29 @@
         tools:layout="@layout/fragment_login">
 
         <action
-            android:id="@+id/action_LoginFragment_to_MainFragment"
+            android:id="@+id/action_LoginFragment_to_RegisterFragment"
             app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_MainFragment"
+            app:destination="@+id/MainFragment"/>
     </fragment>
-
-<!--    <fragment-->
-<!--        android:id="@+id/MainFragment"-->
-<!--        android:name="com.example.daver.MainPageFragment"-->
-<!--        android:label="@string/second_fragment_label"-->
-<!--        tools:layout="@layout/fragment_main">-->
-
-<!--        <action-->
-<!--            android:id="@+id/action_MainFragment_to_LoginFragment"-->
-<!--            app:destination="@id/LoginFragment" />-->
-<!--    </fragment>-->
 
     <fragment
         android:id="@+id/RegisterFragment"
         android:name="com.example.daver.RegisterFragment"
         android:label="@string/register_fragment_label"
         tools:layout="@layout/fragment_register">
+
+        <action
+            android:id="@+id/action_RegisterFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.daver.MainPageFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_main">
 
         <action
             android:id="@+id/action_MainFragment_to_LoginFragment"
