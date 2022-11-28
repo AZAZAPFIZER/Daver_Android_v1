@@ -36,7 +36,10 @@ class LoginFragment : Fragment() {
             findNavController().navigate(R.id.action_LoginFragment_to_MainFragment)
         }
         binding.notUserButton.setOnClickListener {
-            findNavController().navigate(R.id.action_LoginFragment_to_MainFragment)
+            findNavController().navigate(R.id.action_LoginFragment_to_RegisterFragment)
+        }
+        binding.lostPwButton.setOnClickListener {
+            findNavController().navigate(R.id.action_LoginFragment_to_FirstLostPwFragment)
         }
     }
 

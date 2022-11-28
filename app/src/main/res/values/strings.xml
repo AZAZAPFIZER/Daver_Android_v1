@@ -1,15 +1,17 @@
 <resources>
     <string name="app_name">Daver</string>
     <string name="action_settings">Settings</string>
+
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
     <string name="register_fragment_label">Register Fragment</string>
+    <string name="login_fragment_label">Login Fragment</string>
+    <string name="main_fragment_label">Main Fragment</string>
+    <string name="first_lost_pw_label">First Lost Pw Fragment</string>
+    <string name="second_lost_pw_label">Second Lost Pw Fragment</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="id">아이디</string>
     <string name="password">비밀번호</string>
     <string name="로그인" />
@@ -35,4 +37,9 @@
     <string name="check_password">비밀번호 확인</string>
     <string name="already_user">이미 회원이신가요?</string>
     <string name="not_user">회원이 아니신가요?</string>
+    <string name="title_lost_pw">비밀번호 찾기</string>
+    <string name="text_input_password">찾고 있는 비밀번호의 아이디를 입력해 주세요</string>
+    <string name="text_next">다음</string>
+    <string name="text_reset_password">비밀번호를 재설정 하세요</string>
+    <string name="text_finish">완료</string>
 </resources>

@@ -8,24 +8,19 @@
     <fragment
         android:id="@+id/LoginFragment"
         android:name="com.example.daver.LoginFragment"
-        android:label="@string/first_fragment_label"
+        android:label="@string/login_fragment_label"
         tools:layout="@layout/fragment_login">
 
         <action
             android:id="@+id/action_LoginFragment_to_MainFragment"
+            app:destination="@+id/MainFragment"/>
+        <action
+            android:id="@+id/action_LoginFragment_to_RegisterFragment"
             app:destination="@id/RegisterFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_FirstLostPwFragment"
+            app:destination="@id/FirstLostPwFragment" />
     </fragment>
-
-<!--    <fragment-->
-<!--        android:id="@+id/MainFragment"-->
-<!--        android:name="com.example.daver.MainPageFragment"-->
-<!--        android:label="@string/second_fragment_label"-->
-<!--        tools:layout="@layout/fragment_main">-->
-
-<!--        <action-->
-<!--            android:id="@+id/action_MainFragment_to_LoginFragment"-->
-<!--            app:destination="@id/LoginFragment" />-->
-<!--    </fragment>-->
 
     <fragment
         android:id="@+id/RegisterFragment"
@@ -34,7 +29,41 @@
         tools:layout="@layout/fragment_register">
 
         <action
+            android:id="@+id/action_RegisterFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MainFragment"
+        android:name="com.example.daver.MainPageFragment"
+        android:label="@string/main_fragment_label"
+        tools:layout="@layout/fragment_main">
+
+        <action
             android:id="@+id/action_MainFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirstLostPwFragment"
+        android:name="com.example.daver.FirstLostPwFragment"
+        android:label="@string/first_lost_pw_label"
+        tools:layout="@layout/fragment_first_lost_pw">
+
+        <action
+            android:id="@+id/action_FirstLostPwFragment_to_SecondLostPwFragment"
+            app:destination="@id/SecondLostPwFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SecondLostPwFragment"
+        android:name="com.example.daver.SecondLostPwFragment"
+        android:label="@string/second_lost_pw_label"
+        tools:layout="@layout/fragment_second_lost_pw">
+
+
+        <action
+            android:id="@+id/action_SecondLostPwFragment_to_LoginFragment"
             app:destination="@id/LoginFragment" />
     </fragment>
 </navigation>
